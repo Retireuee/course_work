@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1102</width>
+    <height>511</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabs">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>1001</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="supplies">
+     <attribute name="title">
+      <string>поставки</string>
+     </attribute>
+     <widget class="QTableWidget" name="supplie_table">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>831</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>Номер поставки</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>дата поставки</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Поставщик</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ТТН</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ИНН</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>КПП</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Код продукта</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Кол-во продукта</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="btn_add_orders">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>390</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>добавить</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_load_orders">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>390</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>загрузить</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_del_orders">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>390</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>удалить</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_save_orders">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>310</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>СОХРАНИТЬ</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_del_all_orders">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>0</y>
+        <width>131</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>удалить все</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_xls_orders">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>220</y>
+        <width>131</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ВЫГРУЗИТЬ</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="suppliers">
+     <attribute name="title">
+      <string>поставщики</string>
+     </attribute>
+     <widget class="QTableWidget" name="suppliers_table">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>837</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>Номер</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Поставщик</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ИНН</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>КПП</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="btn_add_users">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>390</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>добавить</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_del_users">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>390</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>удалить</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_load_users">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>390</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>загрузить</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_del_all_users">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>0</y>
+        <width>131</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>удалить все</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_save_users">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>310</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>СОХРАНИТЬ</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_xls_users">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>220</y>
+        <width>131</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ЗАГРУЗИТЬ В ECXEL</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="lbl_info_tbl">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>460</y>
+      <width>631</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
